@@ -1,0 +1,264 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.70),
+            rgba(20, 0, 40, 0.85)
+        ),
+        url("arcade.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+header {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+.logo {
+    font-size: 55px;
+    font-weight: bold;
+    color: #00ffff;
+    text-shadow:
+        0 0 5px #00ffff,
+        0 0 15px #00ffff,
+        0 0 30px #00ffff,
+        0 0 60px #00ffff;
+}
+.subtitulo {
+    margin-top: 15px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: #ff00cc;
+    text-shadow:
+        0 0 10px #ff00cc;
+}
+.buscador {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+#buscar {
+    width: 90%;
+    max-width: 500px;
+    padding: 15px 20px;
+    border: 2px solid #00ffff;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 16px;
+    box-shadow:
+        0 0 10px #00ffff;
+}
+#buscar::placeholder {
+    color: #aaa;
+}
+.categorias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+}
+.categoria {
+    padding: 12px 20px;
+    border: 2px solid #ff00cc;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.categoria:hover {
+    transform: scale(1.1);
+    box-shadow:
+        0 0 10px #ff00cc,
+        0 0 25px #ff00cc;
+}
+.titulo-seccion {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 32px;
+    color: #00ffff;
+    text-shadow:
+        0 0 10px #00ffff,
+        0 0 25px #00ffff;
+}
+.juegos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 30px;
+}
+.juego {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #111;
+    cursor: pointer;
+    box-shadow:
+        0 0 10px #00ffff,
+        0 0 25px rgba(0, 255, 255, 0.5);
+
+    transition: transform 0.3s ease;
+}
+.juego:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 0 10px #00ffff,
+        0 0 30px #00ffff,
+        0 0 50px rgba(0, 255, 255, 0.5);
+}
+.informacion {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:
+        linear-gradient(
+            135deg,
+            #10002b,
+            #240046,
+            #001f2d
+        );
+}
+ .dos{
+
+    width: 100%;
+    left: 40px;
+}
+.informacion h2 {
+    font-size: 30px;
+    margin: 12px 0;
+    color: #00ffff;
+    text-shadow:
+        0 0 10px #00ffff;
+}
+.informacion p {
+    margin-bottom: 10px;
+
+    line-height: 1.5;
+}
+.etiqueta {
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: #ff00cc;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow:
+        0 0 10px #ff00cc;
+}
+.boton-jugar {
+    width: fit-content;
+    margin-top: 15px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: #ff0080;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow:
+        0 0 10px #ff0080;
+    transition: 0.3s;
+}
+.boton-jugar:hover {
+    transform: scale(1.1);
+    box-shadow:
+        0 0 10px #ff0080,
+        0 0 30px #ff0080;
+}
+.portada {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    cursor: pointer;
+    transition:
+        transform 0.6s ease;
+}
+.portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nombre-juego {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0, 0, 0, 0.9)
+        );
+
+    text-shadow:
+        0 0 10px #00ffff;
+}
+.juego input {
+    display: none;
+}
+.juego input:checked ~ .portada {
+    transform: translateX(-250px);
+}
+.mario .portada {
+    transition:
+        transform 0.6s ease;
+}
+.mario input:checked ~ .portada {
+    transform: translateX(250px);
+}
+.pacman .portada {
+    transition:
+        transform 0.6s ease;
+}
+.pacman input:checked ~ .portada {
+    transform: translateX(250px);
+}
+.ultrakill .portada {
+    transition:
+        transform 0.6s ease;
+}
+.ultrakill input:checked ~ .portada {
+    transform: translateX(250px);
+}
+footer {
+    
+    text-align: center;
+    padding: 60px 20px 30px;
+    color: #00ffff;
+    text-shadow:
+        0 0 10px #00ffff;
+}
+footer p {
+    margin: 10px;
+}
+.accion{
+    display: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}

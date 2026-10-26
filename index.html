@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade</title>
+    <link rel="stylesheet" href="juegos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo"> 🕹️ ARCADE ZONE 🕹️</div>
+        <p class="subtitulo">NSERT COIN • PRESS START</p>
+    </header>
+
+    <section class="buscador">
+        <input type="text" id="buscar" placeholder="🔎 Buscar juego...">
+    </section>
+
+    <nav class="categorias">
+        <button class="categoria"><a href="http://127.0.0.1:5500/index.html">TODOS</a></button>
+        <button class="categoria"><a href="http://127.0.0.1:5500/accion.html">ACCION</a></button>
+        <button class="categoria"><a href="http://127.0.0.1:5500/aventura.html">AVENTURA</a></button>
+        <button class="categoria"><a href="http://127.0.0.1:5500/clasicos.html">CLASICOS</a></button>
+        <button class="categoria"><a href="http://127.0.0.1:5500/retro.html">RETRO</a></button>
+    </nav>
+
+    <h2 class="titulo-seccion">
+        ⭐ JUEGOS DESTACADOS ⭐
+    </h2>
+
+    <section class="juegos">
+        <article class="juego ultrakill">
+            <input type="checkbox" id="ultrakill">
+            <label for="ultrakill" class="portada">
+                <img src="ultrakill.webp" alt="ULTRAKILL">
+                <div class="nombre-juego">
+                    ULTRAKILL
+                </div>
+            </label>
+            <div class="informacion">
+                <span class="etiqueta">
+                    ACCIÓN
+                </span>
+                <h2>
+                    ULTRAKILL
+                </h2>
+                <p>
+                    ULTRAKILL es un FPS retro de
+                    acción rápida donde controlás
+                    a V1, una máquina de combate
+                    que atraviesa las profundidades
+                    del Infierno.
+                </p>
+                <p>
+                    <strong>Género:</strong>
+                    FPS / Acción
+                </p>
+                <p>
+                    <strong>Lanzamiento:</strong>
+                    2020
+                </p>
+                <p>
+                    <strong>Plataforma:</strong>
+                    PC
+                </p>
+                <a href="#" class="boton-jugar">
+                    ▶ JUGAR
+                </a>
+            </div>
+        </article>
+        <article class="juego pacman">
+            <input type="checkbox" id="pacman">
+            <label for="pacman" class="portada">
+                <img src="pacman.png" alt="Pac-Man">
+                <div class="nombre-juego">
+                    PAC-MAN
+                </div>
+            </label>
+            <div class="informacion">
+                <span class="etiqueta">
+                    RETRO
+                </span>
+                <h2>
+                    PAC-MAN
+                </h2>
+                <p>
+                    Pac-Man es un clásico videojuego
+                    arcade en el que controlás a
+                    Pac-Man mientras recorrés un
+                    laberinto y conseguís puntos.
+                </p>
+                <p>
+                    <strong>Género:</strong>
+                    Arcade / Laberinto
+                </p>
+                <p>
+                    <strong>Lanzamiento:</strong>
+                    1980
+                </p>
+                <p>
+                    <strong>Desarrollador:</strong>
+                    Namco
+                </p>
+                <a href="https://www.google.com/search?q=pacman&oq=pacman&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyDQgBEC4YgwEYsQMYgAQyDQgCEAAYgwEYsQMYgAQyDQgDEAAYgwEYsQMYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYjwIyBwgJEAAYjwLSAQkyOTk5ajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8"
+                    class="boton-jugar">
+                    ▶ JUGAR
+                </a>
+            </div>
+        </article>
+        <article class="juego mario">
+            <input type="checkbox" id="mario">
+            <label for="mario" class="portada">
+                <img src="images.jpg" alt="Super Mario">
+
+            </label>
+            <div class="informacion">
+
+                <span class="etiqueta">
+                    CLÁSICO
+                </span>
+                <h2>
+                    SUPER MARIO
+                </h2>
+                <p>
+                    Un clásico videojuego de
+                    plataformas donde deberás
+                    superar niveles, conseguir
+                    monedas y enfrentarte
+                    a diferentes enemigos.
+                </p>
+                <p>
+                    <strong>Género:</strong>
+                    Plataformas
+                </p>
+                <p>
+                    <strong>Lanzamiento:</strong>
+                    1985
+                </p>
+                <p>
+                    <strong>Desarrollador:</strong>
+                    Nintendo
+                </p>
+                <a href="#" class="boton-jugar">
+                    ▶ JUGAR
+                </a>
+            </div>
+        </article>
+        <div class="juego">
+            <input type="checkbox" id="minecraft">
+            <label for="minecraft" class="portada">
+                <img src="minecraft.jpg" alt="Minecraft">
+                <span>MINECRAFT</span>
+            </label>
+            <div class="informacion dos">
+                <small>AVENTURA</small>
+                <h3>MINECRAFT</h3>
+                <p>
+                    Un juego donde podés explorar,
+                    construir casas y sobrevivir
+                    en un mundo de bloques.
+                </p>
+                <p><strong>Género:</strong> Aventura</p>
+                <p><strong>Año:</strong> 2011</p>
+                <p><strong>Desarrollador:</strong> Mojang</p>
+                <a href="https://share.google/jKGRQbjtLzLwaPXuy" class="jugar">▶ JUGAR</a>
+            </div>
+        </div>
+        <div class="juego">
+            <input type="checkbox" id="sonic">
+            <label for="sonic" class="portada">
+                <img src="sonic.jpg" alt="Sonic">
+                <span>SONIC</span>
+            </label>
+            <div class="informacion dos">
+                <small>CLÁSICO</small>
+                <h3>SONIC</h3>
+                <p>
+                    Controlá a Sonic, corré a gran
+                    velocidad, juntá anillos y
+                    superá diferentes niveles.
+                </p>
+
+                <p><strong>Género:</strong> Plataformas</p>
+                <p><strong>Año:</strong> 1991</p>
+                <p><strong>Desarrollador:</strong> Sega</p>
+
+                <a href="#" class="jugar">▶ JUGAR</a>
+            </div>
+
+        </div>
+        <div class="juego">
+
+            <input type="checkbox" id="streetfighter">
+
+            <label for="streetfighter" class="portada">
+                <img src="streetfighter.jpg" alt="">
+                <span>STREET FIGHTER</span>
+            </label>
+            <div class="informacion dos">
+                <small>ACCIÓN</small>
+                <h3>STREET FIGHTER</h3>
+                <p>
+                    Un juego de lucha donde
+                    diferentes personajes se
+                    enfrentan en combates.
+                </p>
+                <p><strong>Género:</strong> Lucha</p>
+                <p><strong>Año:</strong> 1987</p>
+                <p><strong>Desarrollador:</strong> Capcom</p>
+                <a href="#" class="jugar">▶ JUGAR</a>
+            </div>
+        </div>
+        </footer>
+        
+
+</body>
+
+</html>
